@@ -1,5 +1,7 @@
 # config/variables_generales
 import math
+
+
 ## Global constants
 mu0 = 4 * math.pi * 1e-7               # Magnetic permeability of free space (H/m)
 eps0 = 8.85418 * 1e-12                 # Permittivity of free space (F/m)
@@ -53,5 +55,6 @@ EXPORT_RESULTS = True           # Booleano para activar o desactivar la exportac
 EXPORT_FORMAT = "csv"           # Formato de exportación de datos (e.g., "csv", "txt")
 
 # Configuraciones de interfaz PyAEDT
+PROJECT_NAME = "FSS_MTL"  # Nombre del proyecto Q2D
 VERSION = "2023.2"              # Versión específica de PyAEDT a usar
-USE_NON_GRAPHICAL = True        # Ejecutar en modo no gráfico para automatización
+USE_NON_GRAPHICAL = False        # Ejecutar en modo no gráfico para automatización

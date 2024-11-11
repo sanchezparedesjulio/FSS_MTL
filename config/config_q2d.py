@@ -1,9 +1,9 @@
 # config/config_q2d.py
 from config.variables_q2d import *
 from config.variables import *  # Importa constantes y variables globales
-
+from pyaedt import Q2d
 # Diccionario principal donde almacenaremos todas las configuraciones formateadas para Q2D
-q2d = {}
+q2d  = Q2d(PROJECT_NAME, Q2D_DESIGN_NAME) #crear proyecto
 
 # Configuración de los parámetros de la celda en mm
 q2d["gx"] = str(gx) + "mm"
@@ -48,10 +48,6 @@ q2d["Nb"] = Nb
 
 
 
-# Configuración específica para el proyecto Q2D
-q2d["PROJECT_NAME"] = Q2D_PROJECT_NAME                # Nombre del proyecto Q2D
-q2d["WORKSPACE_PATH"] = Q2D_WORKSPACE_PATH            # Ruta de trabajo donde se guardan los resultados
-q2d["EXPORT_FILE"] = Q2D_EXPORT_FILE                  # Nombre del archivo de exportación de resultados
 
 # Validación de configuración (opcional)
 def validate_config():
