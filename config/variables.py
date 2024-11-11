@@ -26,15 +26,17 @@ Nb = 2                                 # Number of parallel bondings in the FSS 
 # Cell dimensions
 gx = 7                                  # X dimension of the cell in mm
 gy = 7                                  # Y dimension of the cell in mm
-Zlen = 30                               # Z dimension of the cell in mm
+Zlen = 20                               # Z dimension of the cell in mm
 
 # Dipole parameters
 T = 0.032                               # Metallization thickness in mm
+Lf=[5.9,5.66,5.5,5.2,5]
 Lf_1 = 5.9                              # Length of the first finger in mm
 Lf_2 = 5.66                             # Length of the second finger in mm
 Lf_3 = 5.5                              # Length of the third finger in mm
 desp = 0.7                              # Separation between fingers in mm
 sep = 0.6                               # Separation between layers in mm
+Wf=[0.4,0.4,0.4,0.4,0.4]
 Wf1 = 0.5                               # Width of finger 1 in mm
 Wf2 = 0.4                               # Width of finger 2 in mm
 Wf3 = 0.4                               # Width of finger 3 in mm
@@ -58,3 +60,10 @@ EXPORT_FORMAT = "csv"           # Formato de exportación de datos (e.g., "csv",
 PROJECT_NAME = "FSS_MTL"  # Nombre del proyecto Q2D
 VERSION = "2023.2"              # Versión específica de PyAEDT a usar
 USE_NON_GRAPHICAL = False        # Ejecutar en modo no gráfico para automatización
+
+DIPOLE_PARAMETERS = {       #valor predeterminado de dipole
+    "w": Wf1*mm,
+    "l": Lf1*mm,
+    "t": T*mm,
+    "material": MATERIAL
+}
