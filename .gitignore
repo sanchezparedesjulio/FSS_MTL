@@ -1,0 +1,20 @@
+# Ignorar el entorno virtual
+env/
+
+# Ignorar archivos de Python compilados
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignorar archivos de log
+*.log
+
+# Ignorar archivos temporales de editores
+*~
+.DS_Store
+.vscode/
+
+# Ignorar otros archivos específicos del proyecto
+*.bak
+*.swp

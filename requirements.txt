@@ -1,0 +1,2 @@
+pyaedt
+numpy    
