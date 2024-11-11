@@ -58,7 +58,7 @@ def validate_config():
         raise ValueError("Dimensiones de FSS no válidas, deben ser mayores que cero.")
     if not (0 < RESOLUTION <= 2000):
         raise ValueError("Resolución no válida, debe estar entre 1 y 2000.")
-    print("Configuración validada correctamente.")
+    print(" USER INFO: Configuración validada correctamente.")
 
 # Llama a la validación al cargar el módulo
 validate_config()
